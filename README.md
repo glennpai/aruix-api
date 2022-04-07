@@ -1,73 +1,35 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
-</p>
+# Aruix API
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
-  
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+Authored by Christopher Glenn  
+chglenn20@gmail.com  
 
-## Description
+---
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+An API for various toys used by my Discord bot, Aruix  
+Made using [NestJS](https://nestjs.com/) TypeScript starter project  
 
-## Installation
+## Purpose
 
-```bash
-$ npm install
-```
+I started this project as practice for my web application development skills in my career as a software engineer. I wanted to use a well known framework that was both powerful and new to me. Enter: NestJS. 
 
-## Running the app
+In the last few years I have started and restarted making Discord bots too many times to count. It seemed like every time I came back to a work-in-progress, I've learned enough about programming since the last time that I think "Why did I do it this way?". I've decided splitting the bot into two independent pieces, essentially a chat-based UI and resource. This will allow me to more easily update and test the code behind the scenes without the trouble of dealing with a noisy Discord bot the entire time. 
 
-```bash
-# development
-$ npm run start
+## Running the App
 
-# watch mode
-$ npm run start:dev
+Detailed documentation for the API can be found under `docs/`  
+Here are some of the more common commands used:  
 
-# production mode
-$ npm run start:prod
-```
+- `npm run start:dev` - Run app in watch mode. Server will restart on file save.
+- `npm run start:debug` - Run app in debug mode. Enables debug console logs. 
+- `npm run clean` - Remove **all** local build artifacts and reinstall dependencies with NPM. This can take a while.
+- `lint` - Lint relevent files, fixing format issues. Run this often and see less format errors overall. 
 
-## Test
+## Todo
 
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-  Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+- Implement unit tests
+- Add routes for more functionality
+- Add external SQLite DB integration (see: [sqlite-docker](https://github.com/glennpai/sqlite-docker))
+- Add functionality to the logger functions: access logging, error logs, etc. 
+- Dockerize
+- Better readme
+- Better docs

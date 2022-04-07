@@ -1,10 +1,19 @@
-import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { MiddlewareConsumer, Module, RequestMethod } from '@nestjs/common';
+import { CoinModule } from './coin/coin.module';
+import { LoggerMiddleware } from './common/middleware/logger/logger.middleware';
+import { AccessMiddleware } from './common/middleware/access/access.middleware';
+import { StatusController } from './status/status.controller';
+import { LoggerService } from './common/logging/logger.service';
 
 @Module({
-  imports: [],
-  controllers: [AppController],
-  providers: [AppService],
+  imports: [CoinModule],
+  controllers: [StatusController],
+  providers: [LoggerService],
 })
-export class AppModule {}
+export class AppModule {
+  configure(consumer: MiddlewareConsumer) {
+    consumer
+      .apply(LoggerMiddleware, AccessMiddleware)
+      .forRoutes({ path: '*', method: RequestMethod.ALL });
+  }
+}
