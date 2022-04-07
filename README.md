@@ -22,7 +22,7 @@ Here are some of the more common commands used:
 - `npm run start:dev` - Run app in watch mode. Server will restart on file save.
 - `npm run start:debug` - Run app in debug mode. Enables debug console logs. 
 - `npm run clean` - Remove **all** local build artifacts and reinstall dependencies with NPM. This can take a while.
-- `lint` - Lint relevent files, fixing format issues. Run this often and see less format errors overall. 
+- `npm run lint` - Lint relevent files, fixing format issues. Run this often and see less format errors overall. 
 
 ## Todo
 
