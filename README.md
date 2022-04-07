@@ -10,7 +10,7 @@ Made using [NestJS](https://nestjs.com/) TypeScript starter project
 
 ## Purpose
 
-I started this project as practice for my web application development skills in my career as a software engineer. I wanted to use a well known framework that was both powerful and new to me. Enter: NestJS. 
+I started this project as practice for my web application development skills in my career as a software engineer. I wanted to use a widely known framework that was both powerful and new to me. Enter: NestJS. 
 
 In the last few years I have started and restarted making Discord bots too many times to count. It seemed like every time I came back to a work-in-progress, I've learned enough about programming since the last time that I think "Why did I do it this way?". I've decided splitting the bot into two independent pieces, essentially a chat-based UI and resource. This will allow me to more easily update and test the code behind the scenes without the trouble of dealing with a noisy Discord bot the entire time. 
 
