@@ -7,8 +7,8 @@ export class CoinController {
   constructor(private coinService: CoinService) {}
 
   @Get('coin')
-  getCoin(@Body() flipsReq: BasicReq): string[] {
-    const { data } = flipsReq;
+  getCoin(@Body() body: BasicReq): string[] {
+    const { data } = body;
     const flips = data[Object.keys(data).find((key) => key === 'flips')];
     if (Number.isInteger(flips)) {
       return this.coinService.flipCoin(flips);
