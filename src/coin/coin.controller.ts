@@ -1,5 +1,5 @@
 import { Controller, Get, Body, BadRequestException } from '@nestjs/common';
-import { BasicReq } from 'src/common/types/BasicReq';
+import { BasicReq } from '../common/types/BasicReq';
 import { CoinService } from './coin.service';
 
 @Controller()

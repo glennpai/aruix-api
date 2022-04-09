@@ -1,4 +1,5 @@
-export const color = {
+// Escaped octal color code for logging messages
+export const Color = {
   black: '\x1b[30m',
   red: '\x1b[31m',
   green: '\x1b[32m',

@@ -5,7 +5,7 @@ import {
   NestInterceptor,
 } from '@nestjs/common';
 import { map, Observable, tap } from 'rxjs';
-import { BasicRes } from 'src/common/types/BasicRes';
+import { BasicRes } from '../../common/types/BasicRes';
 import { LoggerService } from './logger.service';
 
 @Injectable()
@@ -24,7 +24,7 @@ export class LoggerInterceptor implements NestInterceptor {
     return {
       statusCode: code,
       message: msg,
-      data: data ? data : undefined,
+      data: data,
       path: path,
       timestamp: new Date().toLocaleString(),
     };

@@ -1,9 +1,9 @@
 import { MiddlewareConsumer, Module, RequestMethod } from '@nestjs/common';
 import { CoinModule } from './coin/coin.module';
-import { LoggerMiddleware } from './common/middleware/logger/logger.middleware';
+import { LoggerMiddleware } from './common/logger/logger.middleware';
 import { AccessMiddleware } from './common/middleware/access/access.middleware';
 import { StatusController } from './status/status.controller';
-import { LoggerService } from './common/logging/logger.service';
+import { LoggerService } from './common/logger/logger.service';
 
 @Module({
   imports: [CoinModule],

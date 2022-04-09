@@ -2,8 +2,8 @@ import { ValidationPipe } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { HttpExceptionFilter } from './common/filters/http-exception.filter';
-import { LoggerInterceptor } from './common/logging/logger.interceptor';
-import { LoggerService } from './common/logging/logger.service';
+import { LoggerInterceptor } from './common/logger/logger.interceptor';
+import { LoggerService } from './common/logger/logger.service';
 
 async function bootstrap() {
   const logger = new LoggerService();

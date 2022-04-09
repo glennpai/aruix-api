@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { LoggerService } from '../common/logging/logger.service';
+import { LoggerService } from '../common/logger/logger.service';
 import { CoinController } from './coin.controller';
 import { CoinService } from './coin.service';
 
