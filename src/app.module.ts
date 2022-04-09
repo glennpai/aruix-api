@@ -4,9 +4,10 @@ import { LoggerMiddleware } from './common/logger/logger.middleware';
 import { AccessMiddleware } from './common/middleware/access/access.middleware';
 import { StatusController } from './status/status.controller';
 import { LoggerService } from './common/logger/logger.service';
+import { DiceModule } from './dice/dice.module';
 
 @Module({
-  imports: [CoinModule],
+  imports: [CoinModule, DiceModule],
   controllers: [StatusController],
   providers: [LoggerService],
 })
