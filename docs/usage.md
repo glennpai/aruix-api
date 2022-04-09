@@ -15,7 +15,7 @@ All requests must contain a RAW JSON object in the body of the request with the 
 
 - `user` - **Required** - The user submitting the request
 - `data` - **Optional** - Data used to perform operations at a given route
-    - The `data` object may have zero or more records but must have at least one record if included in the request 
+    - The `data` object must contain at least one record if included in the request 
 
 ## /coin
 
