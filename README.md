@@ -28,8 +28,8 @@ Here are some of the more common commands used:
 
 - Implement unit tests
 - Add routes for more functionality
-- Add external SQLite DB integration (see: [sqlite-docker](https://github.com/glennpai/sqlite-docker))
-- Add functionality to the logger functions: access logging, error logs, etc. 
+- Add external ~~SQLite~~ __Postgres?__ DB integration so this API has an actual reason to be an independent API (see: [sqlite-docker](https://github.com/glennpai/sqlite-docker))
+- Add functionality to the logger functions: access logging, error logs, etc. (Database integration!)
 - Dockerize
 - Better readme
 - Better docs
